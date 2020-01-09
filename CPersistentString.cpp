@@ -48,7 +48,11 @@ using namespace std;
 
 	int CPersistentString::calculateLength()
 	{
-		return content.length();
+		int i;
+		for (i = 0; content[i] != '\0'; i++)
+		{
+		}
+		return i;
 	}
 
 	void CPersistentString::setLength(int _length)
